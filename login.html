@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="nossa tela de login">
-    <title>tela login</title>
     <link rel="stylesheet" href="login.css">
-    <script src="/iniciando/scripts/scripts.js"></script>
-    
+    <title>Pagina De login</title>
 </head>
 <body>
-<div class="page"> 
-    <form method="post" class="formLogin">
-        <h1>Login</h1>
-        <p>Digite os seus dados de acesso no campo abaixo.</p>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required autofocus>
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
-        <div class="remember-me">
-            <input type="checkbox" id="remember" name="remember">
-            <label for="remember">Lembrar-me</label>
-        </div>
-        <div class="links">
-            <a id="lembrar" href="#forgot-password" class="forgot-password">Esqueci minha senha</a>
-            <a id="criar" href="#create-account" class="create-account">Registrar</a>
-        </div>
-        <input type="submit" value="Entrar" class="btn">
-    </form>
-</div>
+    <form action="">   
+        <div class="titulo">
+   <h1>Faça o seu login</h1> 
+   <div class="barra-horizontal"></div>
+       </div>  
+
+   <div class="campo-input">
+   <label for="email">Seu e-mail</label>
+   <input type="email" id="email" required>
+   </div>
+
+   <div class="campo-input">
+   <label for="password">Sua senha</label>
+   <input type="password" id="password" required>
+   </div>
+
+   <div class="lembrar-me">
+   <input type="checkbox"/>
+   <p>lembrar-me</p>
+   </div>
+
+   <button class="botao">Entrar<a href="https://www.youtube.com/"></a></button>
+
+   <p class="esqueceu-senha">Esqueceu a senha? 
+    <a href="senha.html">Clique aqui</a></p>
+    <p class="registrar-se">Registrar-se?
+        <a href="register.html">Clique aqui</a></p>
+
+   </form>
 </body>
 </html>

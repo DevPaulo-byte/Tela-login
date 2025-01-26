@@ -1,107 +1,105 @@
-/* CSS Tela De Login */
-
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'inter' sans-serif;
-    margin: 0;
-    padding: 0;
-    color:#023047;
-}
-
-.page {
+    font-family: "montserrat";
+    color: #404040;
+    /* flex container */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
+    /* viewport height */
     height: 100vh;
-    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/login.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 20px;
 }
 
-.formLogin {
+form {
+    /*  flex child */
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 19px;
-    padding: 40px;
-    box-shadow: 10px 10px 40px  rgb(0, 0, 0);
-    gap: 3px
+    gap: 25px;
 }
 
-
-.areaLogin img {
-    width: 430px;
+h1 {
+    font-size: 24px;
 }
 
-.formLogin h1 {
-    padding: 0;
-    width: 0;
-    font-weight: 500;
-    font-size: 2.5em;
-}
-
-.formLogin p {
-    display: inline-block;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 25px;
-}
-
-.formLogin input {
+button {
     padding: 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    border-radius: 4px;
-    transition: all linear 160ms;
-    outline: none;
-}
-
-
-.formLogin input:focus {
-    border: 1px solid #f72585;
-}
-
-.formLogin label {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.formLogin a {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 13px;
-    color: #555;
-    transition: all linear 160ms;
-}
-
-.formLogin a:hover {
-    color: #f72585;
-}
-
-.btn {
-    background-color: #f72585;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    border: none !important;
-    transition: all linear 160ms;
+    align-self: center;
+    width: 160px;
+    border-radius: 30px;
+    background-image: linear-gradient(#256a8a, #3393c1);
+    border-right-width: none;
+    border-bottom-width: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 620;
+    text-transform: uppercase;
     cursor: pointer;
-    margin: 0 !important;
+    border: 0;
+    box-shadow:  2px 2px 0px 1px #256a8a;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: .1em;
 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
-    transform: scale(1.05);
-    background-color: #ff0676;
-
+input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1f1f1;
 }
-.links {
+
+a {
+    color: #009dff;
+}
+.barra-horizontal {
+    background-color: #f87842;
+    height: 4px;
+    width: 170px;
+}
+
+.campo-input {
+    /* flex container */
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
 }
+
+.lembrar-me {
+    /* flex container */
+    display: flex;
+    gap: 5px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+
+.esqueceu-senha {
+text-align: center;
+}
+
+.botao:active {
+    box-shadow: 0 0 0 0 #256a8a, inset 3px 3px 3px #194f68;
+    transform: translate(3px, 3px);
+}
+
+.registrar-se {
+    text-align: center;
+}
+/* PauloByte */

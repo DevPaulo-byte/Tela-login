@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: "montserrat";
+      color: #404040;
+      /* flex container */
+      display: flex;
+      /* viewport height */
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/login.jpg);
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      padding: 20px;
+  }
+  
+  form {
+      /*  flex child */
+      background-color: white;
+      padding: 50px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+  
+  h1 {
+      font-size: 24px;
+  }
+  
+  button {
+      padding: 15px;
+      align-self: center;
+      width: 160px;
+      border-radius: 30px;
+      background-image: linear-gradient(#256a8a, #3393c1);
+      border-right-width: none;
+      border-bottom-width: none;
+      font-size: 20px;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: 0;
+      box-shadow:  2px 2px 0px 1px #256a8a;
+      text-decoration: none;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      letter-spacing: 1px;
+  
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  input {
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: #f1f1f1;
+  }
+  
+  a {
+      color: #009dff;
+  }
+
+  p {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+  }
+  .barra-horizontal {
+      background-color: #f87842;
+      height: 4px;
+      width: 110px;
+  }
+  
+  .campo-input {
+      /* flex container */
+      display: flex;
+      flex-direction: column;
+  }
+   
+  .titulo {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+  }
+  
+  .botao:active {
+      box-shadow: 0 0 0 0 #256a8a, inset 3px 3px 3px #194f68;
+      transform: translate(3px, 3px);
+  }
+  
+  .voltar {
+    text-align: right;
+  }
+  /* PauloByte */
